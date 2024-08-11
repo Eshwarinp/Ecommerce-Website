@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="calculator">
+
+        <input type="text" class="inputbox" id="inputbox">
+            
+        <div>
+            <input type="button" value="AC" class="operator" onclick="inputbox.value =''">
+            <input type="button" value="C" class="operator" onclick="inputbox.value = inputbox.value.toString().slice(0,-1)">
+            <input type="button" value="/" class="operator" onclick="inputbox.value +='/'">
+            <input type="button" value="%" class="operator" onclick="inputbox.value +='%'">
+        </div>
+
+        <div >
+            <input type="button" value="7" onclick="inputbox.value +='7' ">
+            <input type="button" value="8" onclick="inputbox.value +='8'">
+            <input type="button" value="9" onclick="inputbox.value +='9'">
+            <input type="button" value="x" class="operator" onclick="inputbox.value +='*'">
+        </div>
+        
+        <div >
+            <input type="button" value="4" onclick="inputbox.value +='4' ">
+            <input type="button" value="5" onclick="inputbox.value +='5'">
+            <input type="button" value="6" onclick="inputbox.value +='6'">
+            <input type="button" value="-" class="operator" onclick="inputbox.value +='-'">
+        </div>
+        
+        <div >
+            <input type="button" value="1" onclick="inputbox.value +='1'">
+            <input type="button" value="2" onclick="inputbox.value +='2'">
+            <input type="button" value="3" onclick="inputbox.value +='3'">
+            <input type="button" value="+" class="operator" onclick="inputbox.value +='+'">
+        </div>
+        
+        <div class="row">
+            <input type="button" value="00" onclick="inputbox.value +='00'">
+            <input type="button" value="0" onclick="inputbox.value +='0'">
+            <input type="button" value="." onclick="inputbox.value +='.'">
+            <input type="button" value="=" class="operator" onclick="inputbox.value= eval(inputbox.value)">
+        </div>
+    </div>
+
+    
+</body>
+</html>
